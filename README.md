@@ -1,6 +1,6 @@
 # API Documentation
 
-Documentación interactiva para la API de ServerKitESG, generada dinámicamente a partir de especificaciones Swagger/OpenAPI.
+Documentación interactiva para APIs generada dinámicamente a partir de especificaciones Swagger/OpenAPI.
 
 ## CARACTERÍSTICAS
 
@@ -24,11 +24,13 @@ Documentación interactiva para la API de ServerKitESG, generada dinámicamente 
 
 ### Estructura de archivos para Docker
 
+```
 api-docs/
 ├── Dockerfile
 ├── docker-compose.yml
 ├── .dockerignore
 └── ... (archivos del proyecto)
+```
 
 ### Despliegue rápido
 

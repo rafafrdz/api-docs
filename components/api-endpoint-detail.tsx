@@ -52,7 +52,7 @@ export function ApiEndpointDetail({ endpoint }: ApiEndpointDetailProps) {
               <div>
                 <h3 className="font-semibold mb-2">URL</h3>
                 <div className="bg-muted p-3 rounded-md font-mono text-sm">
-                  {endpoint.method.toUpperCase()} https://api.serverkitesg.com/api{endpoint.path}
+                  {endpoint.method.toUpperCase()} https://api.domain.com/api{endpoint.path}
                 </div>
               </div>
 
@@ -209,7 +209,7 @@ export function ApiEndpointDetail({ endpoint }: ApiEndpointDetailProps) {
         </TabsContent>
 
         <TabsContent value="playground" className="space-y-4">
-          <ApiPlayground endpoint={endpoint} baseUrl="https://api.serverkitesg.com/api" />
+          <ApiPlayground endpoint={endpoint} baseUrl="https://api.domain.com/api" />
         </TabsContent>
       </Tabs>
     </div>
@@ -217,7 +217,7 @@ export function ApiEndpointDetail({ endpoint }: ApiEndpointDetailProps) {
 }
 
 function generateCurlExample(endpoint: ApiEndpoint): string {
-  let url = `https://api.serverkitesg.com/api${endpoint.path}`
+  let url = `https://api.domain.com/api${endpoint.path}`
 
   // Replace path parameters with example values
   if (endpoint.parameters) {
@@ -257,7 +257,7 @@ function generateCurlExample(endpoint: ApiEndpoint): string {
 }
 
 function generateFetchExample(endpoint: ApiEndpoint): string {
-  let url = `https://api.serverkitesg.com/api${endpoint.path}`
+  let url = `https://api.domain.com/api${endpoint.path}`
 
   // Replace path parameters with example values
   if (endpoint.parameters) {
